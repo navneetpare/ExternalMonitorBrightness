@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=External Monitor Brightness
+Comment=Adjust the brightness of an external monitor via ddcui
+
+Icon=../plasma/plasmoids/ExternalMonitorBrightness/contents/images/brightness.png
+Type=Service
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/main.qml
+# X-Plasma-NotificationArea=true
+X-Plasma-NotificationAreaCategory=Hardware
+
+X-KDE-PluginInfo-Author=Navneet Pare
+X-KDE-PluginInfo-Email=navneet.pare@gmail.com
+X-KDE-PluginInfo-Name=ExternalMonitorBrightness
+X-KDE-PluginInfo-Version=1.0.0
+X-KDE-PluginInfo-Website=navneet.pare@gmail.com
+X-KDE-PluginInfo-Category=Hardware
+X-KDE-PluginInfo-License=GPL
+# X-KDE-PluginInfo-EnabledByDefault=false
