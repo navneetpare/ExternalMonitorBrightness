@@ -43,7 +43,7 @@ Item {
             }
         }
         function exec() {
-            connectSource("ddcutil --noverify --nodetect --sleep-multiplier 0.1 --bus " + controller.i2c_device_bus_id + " getvcp 10 | cut -d '=' -f 2 | cut -d ',' -f 1 | sed 's/^ *//g'")                    
+            connectSource("ddcutil --noverify --sleep-multiplier 0.1 --bus " + controller.i2c_device_bus_id + " getvcp 10 | cut -d '=' -f 2 | cut -d ',' -f 1 | sed 's/^ *//g'")                    
         }
     }
     
@@ -70,7 +70,7 @@ Item {
     }
     
     function set_brightness(value){
-        var cmd = "ddcutil --noverify  --sleep-multiplier 0.1 --nodetect --bus 3 setvcp 10 " + value
+        var cmd = "ddcutil --noverify --sleep-multiplier 0.1 --bus 3 setvcp 10 " + value
         bash.exec(cmd)
         controller.current_brightness = value
     }
